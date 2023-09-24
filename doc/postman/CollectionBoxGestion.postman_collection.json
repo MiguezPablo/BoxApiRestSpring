@@ -1,0 +1,282 @@
+{
+	"info": {
+		"_postman_id": "15a0067d-5537-42a4-abd7-07fa55771e77",
+		"name": "CollectionBoxGestion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29985016"
+	},
+	"item": [
+		{
+			"name": "GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/documents",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"documents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST OK 256",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "archivo",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/documents/hash?hashType=SHA-256",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"documents",
+						"hash"
+					],
+					"query": [
+						{
+							"key": "hashType",
+							"value": "SHA-256"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST OK 512",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "archivo",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/documents/hash?hashType=SHA-256",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"documents",
+						"hash"
+					],
+					"query": [
+						{
+							"key": "hashType",
+							"value": "SHA-256"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST HashError",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "archivo",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/documents/hash?hashType=SHA-256",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"documents",
+						"hash"
+					],
+					"query": [
+						{
+							"key": "hashType",
+							"value": "SHA-256"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET FILTER OK 256",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/documents?hashType&hash",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"documents"
+					],
+					"query": [
+						{
+							"key": "hashType",
+							"value": null
+						},
+						{
+							"key": "hash",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET FILTER OK 512",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/documents?hashType&hash",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"documents"
+					],
+					"query": [
+						{
+							"key": "hashType",
+							"value": null
+						},
+						{
+							"key": "hash",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET FILTER hashType ERROR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/documents?hashType&hash",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"documents"
+					],
+					"query": [
+						{
+							"key": "hashType",
+							"value": null
+						},
+						{
+							"key": "hash",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET FILTER hash incorrecto ERROR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/documents?hashType&hash",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"documents"
+					],
+					"query": [
+						{
+							"key": "hashType",
+							"value": null
+						},
+						{
+							"key": "hash",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET FILTER hash vacio ERROR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/documents?hashType&hash",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"documents"
+					],
+					"query": [
+						{
+							"key": "hashType",
+							"value": null
+						},
+						{
+							"key": "hash",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
