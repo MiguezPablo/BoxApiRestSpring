@@ -33,7 +33,7 @@ Nota: Asegúrate de tener instalado y configurado correctamente el JDK correspon
 
 Este proyecto utiliza PostgreSQL como base de datos. Sigue estos pasos para configurar PostgreSQL:
 
-1. Asegúrate de tener PostgreSQL instalado en tu sistema. Si no lo tienes, puedes descargarlo desde aquí.
+1. Asegúrate de tener PostgreSQL instalado en tu sistema. Si no lo tienes, puedes descargarlo desde su pagina oficial.
 2. Inicia el servidor de PostgreSQL.
 3. Crea una nueva base de datos para el proyecto.
 4. Actualiza el archivo `application.properties` en el directorio `src/main/resources` con la URL de la base de datos, el nombre de usuario y la contraseña.
